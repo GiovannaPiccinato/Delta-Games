@@ -1,0 +1,176 @@
+
+.modal {
+	display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	background-color: #241A48;
+	color: #fff;
+	border-radius: 15px;
+	overflow: hidden;
+	height: 20vh;
+	text-align: center;
+}
+
+.close_x {
+	margin-left: 2vh;
+	text-align: left;
+	font-size: 5vh;
+	cursor: pointer;
+	width: 3vh;
+}
+
+.close_x:hover {
+	color: #a0382b;
+	transition: .3s;
+}
+
+.modal_title{
+	margin: 0px 3vh 2vh;
+	font-size: 2.4vh;
+}
+
+#yes {
+	text-decoration: none;
+	background-color: #328f29;
+	padding: 1vh 2vh;
+	border-radius: 12px;
+	color: #fff;
+	margin-right: 1vh;
+}
+
+#yes:hover {
+	background-color: #1e6d17;
+	transition: .3s;
+}
+
+#no {
+	border: none;
+	background-color: #a0382b;;
+	padding: 1vh 2vh;
+	border-radius: 12px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#no:hover {
+	background-color: #911c0d;
+	transition: .3s;
+}
+
+
+
+/* .delet button { */
+	/* border: none; */
+	/* background-color: transparent; Remove o plano de fundo */
+	/* box-shadow: none; Remove a sombra */
+	/* padding: 0 0px; Remove o preenchimento interno */
+	/* margin: 15px 10px; Remove a margem */
+	/* cursor: pointer; */
+/* } */
+
+/* #button_confirm {
+	background-color: #328f29;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#button_confirm:hover {
+	background-color: #1e6d17;
+}
+
+#close_modal {
+	background-color: #a0382b;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#close_modal:hover {
+	background-color: #911c0d;
+} */
+
+
+/* .formulario {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #F6F6F6;
+	text-align: center;
+	border-radius: 31px;
+	height: 65vh;
+	width: 70vh;
+}
+
+.titulo_form {
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border-bottom: 4px solid #FF3447;
+	margin-bottom: 22px;
+	color: #002B4B;
+}
+
+.form_box {
+	display: flex;
+	flex-direction: column;
+}
+
+.form_box input { 	
+	outline: unset;
+	padding: 7px;
+	border-radius: 12px;
+	margin: 10px 94px;
+}
+
+.form_box label {
+	font-size: 17px;
+	font-weight: 600;
+	color: #002B4B;
+}
+
+.form_check label {
+	font-size: 17px;
+	font-weight: 600;
+	color: #002B4B;
+}
+
+.form_box input:focus {
+	background-color: #3f9ee70d;
+}
+
+.cadastrar input[type=submit] {
+	background-color: #FF3447;
+	border: 2px solid #FF3447;
+	color: #fff;
+	border-radius: 12px;
+	cursor: pointer;
+	padding: 7px 24px;
+	font-size: 20px;
+	margin: 16px 0;
+}
+
+.cadastrar input[type=submit]:hover {
+	background-color: #002B4B;
+	border: 2px solid #002B4B;
+	transition: .3s;
+} */
+
+
+

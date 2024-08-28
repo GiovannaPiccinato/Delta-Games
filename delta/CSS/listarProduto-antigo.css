@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.topo {
+	background-color: #002B4B;
+	height: 17vh;
+	width: 100%;
+}
+
+.topo h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	padding-top: 35px;
+}
+
+.menu_lateral {
+	width: 100px;
+	height: 100vh;
+	background-color: #002B4B;
+	padding: 40px 0px 40px 1%;
+	box-shadow: 3px 0 0 #FF3447;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden; /* irá esconder a escrita */
+	transition: .5s;
+}
+
+.menu_lateral.expandir{
+	width: 300px;
+}
+
+
+.btn_expandir {
+	padding-left: 10px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.btn_expandir i {
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.btn_expandir i:hover {
+	background-color: #FF3447;
+	border-radius: 10px;
+	padding: 5px;
+	transition: .3s;
+}
+
+ul {
+	height: 100%;
+	list-style-type: none;
+}
+
+.item_menu {
+	transition: .2s;
+}
+
+.ativo {
+	background-color: #FF3447;
+		margin-left: -20px;
+
+}
+
+.item_menu:hover {
+	background-color: #FF3447;
+}
+
+.item_menu a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	padding: 20px 4%;
+	display: flex;
+	line-height: 30px;
+}
+
+.menu_lateral.expandir .item_menu:hover{
+	margin-left: -20px;
+}
+
+.text {
+	margin-left: 40px;
+	transition: .5s;
+	opacity: 0;
+}
+
+.menu_lateral.expandir .text{ /*estamos declarando que sempre que o menu lateral estiver com 'expandir' ativado, vai ativar o que colocarmos aqui para o text */ 
+	margin-left: 30px;
+	opacity: 1;
+
+}
+
+.icon i {
+	font-size: 30px;
+	padding-left: 5px;
+}
+
+.icon_submenu i {
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.submenu a:hover{
+	background-color: #FF3447;
+	transition: .3s;
+}
+
+.submenu {
+	display: none;
+	background-color: #002B4B;
+}
+
+.submenu.expandir_submenu {
+	display: block;
+}
+
+.cadastro {
+	margin: 20px 0;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.cadastro i {
+	font-size: 20px;
+}
+
+.cadastro button {
+	padding: 13px;	
+	border: 2px solid #ddd;
+	background-color: #002B4B;
+	color: #fff;
+	border-radius: 12px;
+}
+
+.cadastro button:hover {
+	background-color: #FF3447;
+	transition: .2s;
+	cursor: pointer;
+}
+
+
+table {
+	width: 95%;
+	border-collapse: collapse;
+	margin-left: 100px;
+}
+
+.active i {
+	font-size: 25px;
+	padding-left: 10px;
+}
+
+.inative {
+	color: #FF3447;
+}
+
+.green {
+	color: green;
+}
+
+.acoes a i{
+	font-size: 25px;
+	padding: 9px;
+}
+
+.acoes a i:hover {
+	padding: 9px;
+	border-radius: 10px;
+	background-color: #ddd;
+}
+
+.acoes a {
+	text-decoration: none;
+}
+
+th,td {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #FF3447;
+	color: #Fff;
+	font-size: 18px;
+}

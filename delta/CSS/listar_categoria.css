@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.ativo {
+	background-color: #fa6744;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 12px;
+}
+
+.lateral_menu {
+  height: 100vh;
+  width: 32vh;
+  background-image: url(../FOTOS/menu.fw.png);
+  box-shadow: 3px 0 0 #ff3447;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.items {
+  margin-top: 20px;
+}
+.menu_item {
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.menu_item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.icon i {
+  color: #fff;
+  font-size: 22px;
+}
+
+.text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.2vh;
+}
+
+.menu_item:hover {
+  background-color: #fa6744;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close {
+  border: 2px solid #ff3447;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.close a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.close .text {
+  color: #ff3447;
+}
+
+.close i {
+  color: #ff3447;
+}
+
+.close:hover {
+  background-color: #ff3447;
+  transition: 0.3s;
+  cursor: pointer;
+  .text {
+    color: #fff;
+  }
+
+  .icon i {
+    color: #fff;
+  }
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(180deg, #7d1466 0%, #150f2d 50%, #7d1466 100%);
+}
+
+.painel {
+  width: 100%;
+  background-color: #150f2d;
+  background: linear-gradient(267deg, #150f2d 60%, #381447 100%);
+  height: 100vh;
+}
+
+.search-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 6vh 10vh 15px;
+  border-bottom: 1px solid #34296a; /* Adiciona uma borda inferior de 1 pixel */
+  padding-bottom: 25px; /* Opcional: adiciona espaço abaixo dos elementos */
+}
+
+#searchButton {
+	color: #fff;
+	border: none;
+	border-radius: 12px;
+	padding: 6px;
+	cursor: pointer;
+	background-color: #221A46;
+	width: 50%;
+	display: flex;
+}
+
+#searchButton i {
+	padding: 0 15px;
+	color: #fff;
+	opacity: 50%;
+}
+
+#searchInput {
+	padding: 0  60% 0 10px;
+	border-radius: 5px;
+	background-color: #221A46;
+	border: none;
+	color: #fff;
+}
+
+.search-container img {
+  width: 30vh;
+
+}
+
+.list {
+	background: linear-gradient(267deg, #241A48 60%, #37184E 100%);
+  border: 3px solid #34296A;
+  margin: 2vh 10vh;
+	border-radius: 11px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 70vh;
+}
+
+/* Estilizando a barra de rolagem */
+.list::-webkit-scrollbar {
+  width: 1.5vh; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o polegar (indicador de posição) */
+.list::-webkit-scrollbar-thumb {
+  background-color: #5b5376; /* Cor do polegar */
+  border-radius: 6px; /* Raio das bordas do polegar */
+}
+
+/* Alterar cor do polegar quando hover */
+.list::-webkit-scrollbar-thumb:hover {
+  background-color: #5b5376a6;
+}
+
+
+/* 37184E - 241A48 */
+.table_container {
+  width: 99%;
+	border: none;
+  margin: 10px;
+  padding: 10px;
+  border-collapse: separate; /*as bordas das células da tabela devem ser separadas umas das outras. */
+  border-spacing: 0px 10px; /* Define o espaçamento entre as células da tabela, com 0 pixels na horizontal e 10 pixels na vertical. */
+}
+
+.table_head {
+  border: none;
+  height: 30px;
+	
+	tr,td {
+    border: none;
+    border-bottom: 1px #fff solid;
+		opacity: 50%;
+  }
+}
+
+.table_title th, td {
+  padding: 12px;
+  text-align: center;
+	color: #fff;
+}
+
+td {
+  padding: 10px;
+}
+
+.table_body {
+  margin: 10px;
+}
+
+.table_body tr td { /*Remove as bordas direita e esquerda das células do corpo da tabela. */
+  border-right: none;
+  border-left: none;
+	border-color: #6b4ddf;
+	color: #fff;
+	opacity: 87%;
+}
+
+.table_body tr td:first-child { /* seleciona o primeiro elemento filho de seu elemento pai podendo modificar um a um com caracteristicas diferentes*/
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+}
+
+.table_body tr td:last-child { /* estará selecionando apenas o último filho */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+}
+
+.button_delet {
+	background-color: transparent;
+}
+
+.inactive {
+	color: #6b6b6b;
+	font-size: 2.5vh;
+}
+
+.active {
+	color: #328f29;
+	font-size: 2.5vh;
+}
+
+.acoes a i{
+	font-size: 4vh;
+	padding: 9px;
+}
+
+
+.delet_color {
+	color: #a0382b;
+	font-size: 4vh;
+}
+
+.acoes a i:hover {
+	padding: 9px;
+	border-radius: 10px;
+	color: #1e6d17;
+	transition: .2s;
+}
+
+.acoes a {
+	text-decoration: none;
+}
+
+.acoes #button_delet {
+	border: none;
+	background-color: transparent; /* Remove o plano de fundo */
+	box-shadow: none; /* Remove a sombra */
+	padding: 0; /* Remove o preenchimento interno */
+	margin: 15px 0; /* Remove a margem */
+	cursor: pointer;
+}
+
+.acoes #button_delet i:hover {
+	color: #911c0d;
+	transition: .2s;
+}
+
+.cadastro {
+	text-align: right;
+	margin-right: 10vh;
+}
+
+.cadastro i {
+	font-size: 3vh;
+	padding-right: 1vh;
+}
+
+.cadastro button {
+	padding: 1vh 2vh;	
+	background-color: #ff3447;
+	color: #fff;
+	font-weight: bold;
+	font-size: 2vh;
+	border-radius: 10px;
+}
+
+.cadastro button:hover {
+	background-color: #fa6744;
+	transition: .2s;
+	cursor: pointer;
+}
+
+
+
+.describe {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.describe .describe-text {
+	visibility: hidden;
+	width: 50vh;
+	background-color: #241A48 ;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #5b5376;
+	border-radius: 4px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 100%;
+	transition: opacity 0.3s;
+}
+
+.describe:hover .describe-text {
+	visibility: visible;
+	opacity: 1;
+}

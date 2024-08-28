@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+:root {
+	--a: 0deg;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(to left, #021f35 0%, #4a0c3d 100%);
+	overflow: hidden;
+}
+
+.container_form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* pesquisar o que significa: */
+@property --a { 
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 0deg;
+}
+
+.box {
+	position: relative;
+	width: 400px;
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-color: repeating-conic-gradient(from var(--a), #ff3447 0%, #ff3447 10%, transparent 10%, transparent 50%);
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+	0%{
+		--a: 0deg;
+	}
+	100%{
+		--a: 360deg;
+	}
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: repeating-conic-gradient(from var(--a), #ff3447 0%, #ff3447 10%, transparent 10%, transparent 50%);
+	animation: animate 6s linear infinite;
+	animation-delay: -1.5s;
+	border-radius: 16px;
+}
+
+.box::after {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	border: 20px solid #1a1837	;
+	background: #221A46;
+	border-radius: 16px;
+}
+
+form {
+	position: relative;
+	z-index: 1000;
+	padding: 20%;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+	margin-top: -57px;
+}
+
+form h2 {
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 20px;
+	padding-top: 60px;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.1em; /* espaçamento entre as letras */
+	text-transform: uppercase;/* deixa em letra maiuscula */
+}
+
+.inputbx {
+	position: relative;
+	margin-bottom: 40px;
+	width: 30vh;
+	border-radius: 16px;
+}
+
+.inputbx span {
+	position: absolute;
+	inset: -2px;
+	z-index: 1;
+	
+}
+
+.inputbx span::before {
+	content: '';
+	position: absolute;
+	inset: -2px;
+	background: repeating-conic-gradient(from var(--a), #ff3447 0%, #ff3447 10%, transparent 10%, transparent 50%);
+	animation: animate 6s linear infinite;
+	box-shadow: 0 0 0 2px #1d2938;
+	border-radius: 16px;
+}
+
+.inputbx:nth-child(2) span::before {
+	animation-delay: -1.5s;
+}
+
+.inputbx span::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: #1a1837;
+	border-radius: 16px;
+}
+
+.inputbx input {
+	position: relative;
+	z-index: 100000;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 8px 14px;
+	background: transparent;
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+
+.form_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+	text-align: center;
+}
+
+.form_box input { 	
+	padding: 5px 2vh;
+	width: 30vh;
+	margin-right: 2vh;
+	border-radius: 10px;
+	background-color: #34296a;
+  color: #ffffffce;
+	border: none;
+	letter-spacing: 0.1em;
+}
+
+input[type="submit"] {
+	background-color: #fa6744;
+  font-size: 2.5vh;
+	color: #fff;
+  cursor: pointer;
+	border:none;
+}
+
+input[type="submit"]:hover {
+	background-color: #ff3447;
+	color: #fff;
+  transition: .2s;
+}
+
+.inputbx input::placeholder {
+	color: #fff;
+	opacity: 0.5;
+}
+
+.inputbx input [type="submit"] {
+	cursor: pointer;
+	box-shadow: 0 0 0 4px #fa6744;
+	width: 100%;
+	font-weight: 500;
+	color: #292929;
+	filter: drop-shadow(0 0 15px #fa6744);
+}
+
+.group {
+	position: relative;
+	top: -10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.group a {
+	text-decoration: none;
+	color: #fff8;
+	letter-spacing: 0.1em;
+	font-size: 0.75em;
+}
+
+.group a:nth-child(2), 
+.group a:hover {
+	color: #fa6744;
+	filter: drop-shadow(0 0 5px #ff3447);
+}

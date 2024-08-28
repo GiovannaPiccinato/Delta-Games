@@ -1,0 +1,123 @@
+
+
+.form_register {
+	background: linear-gradient(267deg, #241A48 60%, #37184E 100%);
+	border: 3px solid #34296A;
+	margin: 0 10vh;
+	border-radius: 11px;
+	height: 70vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.form_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	flex-direction: column;
+	gap: 2vh;
+	padding: 1vh 0;
+}
+
+.form_box input { 	
+	padding: 7px 2vh;
+	width: 30vh;
+	border-radius: 7px;
+	background-color: #34296a;
+  color: #ffffffce;
+	border: none;
+	margin: 1vh 0;
+}
+
+.form_box label {
+	font-size: 2.5vh;
+	font-weight: 600;
+	color: #fff;
+	opacity: 60%;
+	margin-bottom: -2vh;
+}
+
+.form_box input:focus {
+	background-color: #3f9ee70d;
+	border: none;
+	color: #fff;
+	opacity: 50%;
+}
+
+.form_box select {
+	padding: 7px 2vh;
+	width: 30vh;
+	border-radius: 7px;
+	background-color: #34296a;
+  color: #ffffffce;
+	border: none;
+	margin: 1vh 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+.form_box select option:checked {
+	text-align: center;
+	cursor: pointer;
+}
+
+.form_check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_check label {
+	font-size: 2.5vh;
+	font-weight: 600;
+	color: #fff;
+	opacity: 60%;
+	padding-right: 2vh;
+  margin-left: 4vh;
+}
+
+input[type="checkbox"] {
+	/* Define o tamanho padrão */
+	width: 3vh;
+	height: 5vh;
+}
+
+/* Quando o input checkbox estiver marcado */
+input[type="checkbox"]:checked {
+	/* Aumenta o tamanho */
+	width: 3vh;
+	height: 5vh;
+}
+
+.form_box textarea {
+  padding: 0 2vh;
+	width: 30vh;
+	border-radius: 7px;
+	background-color: #34296a;
+  color: #ffffffce;
+	border: none;
+	margin: 1vh 0;
+}
+
+.form_box textarea:focus {
+	background-color: #3f9ee70d;
+	border: none;
+	color: #fff;
+	opacity: 50%;
+}
+
+input[type="submit"] {
+	background-color: #fa6744;
+  font-size: 2.8vh;
+	color: #fff;
+	font-weight: bold;
+  margin-top: 3vh;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #ff3447;
+	color: #fff;
+  transition: .2s;
+}

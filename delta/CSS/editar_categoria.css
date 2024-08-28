@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 12px;
+}
+
+.lateral_menu {
+  height: 100vh;
+  width: 32vh;
+  background-image: url(../FOTOS/menu.fw.png);
+  box-shadow: 3px 0 0 #ff3447;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.items {
+  margin-top: 20px;
+}
+.menu_item {
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.menu_item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 2vh;
+}
+
+.icon i {
+  color: #fff;
+  font-size: 22px;
+}
+
+.text {
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu_item:hover {
+  background-color: #fa6744;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close {
+  border: 2px solid #ff3447;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.close a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.close .text {
+  color: #ff3447;
+}
+
+.close i {
+  color: #ff3447;
+}
+
+.close:hover {
+  background-color: #ff3447;
+  transition: 0.3s;
+  cursor: pointer;
+  .text {
+    color: #fff;
+  }
+
+  .icon i {
+    color: #fff;
+  }
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(180deg, #7d1466 0%, #150f2d 50%, #7d1466 100%);
+}
+
+.painel {
+  width: 100%;
+  background-color: #150f2d;
+  background: linear-gradient(267deg, #150f2d 60%, #381447 100%);
+  height: 100vh;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7vh 10vh;
+  border-bottom: 1px solid #34296a; /* Adiciona uma borda inferior de 1 pixel */
+  padding-bottom: 10px; /* Opcional: adiciona espaço abaixo dos elementos */
+}
+
+.welcome h1 {
+  color: #fff;
+}
+
+.welcome span {
+  color: #fa6744;
+}
+
+.welcome img {
+  width: 30vh;
+}
+
+.list {
+	background-color: #221A46;
+	border: 2px solid #34296A;
+  display: flex;
+  margin: 7vh 10vh;
+}
+
+.ativo {
+	background-color: #fa6744;
+}
+
+.form_register {
+	background: linear-gradient(267deg, #241A48 60%, #37184E 100%);
+	border: 3px solid #34296A;
+	margin: 0 10vh;
+	border-radius: 11px;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;}
+
+.form_box input { 	
+	padding: 7px 2vh;
+	width: 40vh;
+	border-radius: 7px;
+	background-color: #34296a;
+  color: #ffffffce;
+	border: none;
+	margin: 1.5vh 0;
+  text-align: center;
+}
+
+.form_box label {
+	font-size: 2.5vh;
+	font-weight: 600;
+	color: #fff;
+	opacity: 60%;
+  margin-top: 2vh;
+}
+
+.form_check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_check label {
+	font-size: 2.5vh;
+	font-weight: 600;
+	color: #fff;
+	opacity: 60%;
+	padding-right: 2vh;
+  margin-left: 4vh;
+}
+
+input[type="checkbox"] {
+	/* Define o tamanho padrão */
+	width: 3vh;
+	height: 5vh;
+}
+
+/* Quando o input checkbox estiver marcado */
+input[type="checkbox"]:checked {
+	/* Aumenta o tamanho */
+	width: 3vh;
+	height: 5vh;
+}
+
+.form_box input:focus {
+	background-color: #3f9ee70d;
+	border: none;
+	color: #fff;
+	opacity: 50%;
+}
+
+input[type="submit"] {
+	background-color: #fa6744;
+  font-size: 2.8vh;
+	color: #fff;
+	font-weight: bold;
+  margin-top: 2.5vh;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #ff3447;
+	color: #fff;
+  transition: .2s;
+}
+
+
+
+.form_box textarea {
+  text-align: left;
+  width: 40vh;
+  height: 20vh;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #34296a;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  max-height: 30vh;
+  resize: vertical;
+  overflow-y: auto;
+}
+
+.form_box textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.form_box textarea::-webkit-scrollbar-thumb {
+  background-color: #5b5376;
+  border-radius: 6px;
+}
+
+.form_box textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #5b5376a6;
+}
